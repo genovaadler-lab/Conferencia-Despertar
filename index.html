@@ -45,18 +45,19 @@
         }
         .cta-button:hover { transform: scale(1.05); background: var(--dourado-hover); }
 
-        /* ESTILO DO VÍDEO LOCAL */
-        .sessao-video { padding: 60px 0; background-color: #f0f4f2; text-align: center; }
+        /* ESTILO DO VÍDEO (AJUSTADO PARA SER MENOR) */
+        .sessao-video { padding: 40px 0; background-color: #f0f4f2; text-align: center; }
+        
         .video-wrapper {
-            max-width: 800px;
+            max-width: 600px; /* Tamanho reduzido aqui */
             margin: 0 auto;
-            border-radius: 20px;
+            border-radius: 15px;
             overflow: hidden;
-            border: 4px solid var(--dourado);
-            box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+            border: 3px solid var(--dourado);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
             background: #000;
-            line-height: 0; /* Remove espaços extras */
         }
+
         video { width: 100%; height: auto; display: block; }
 
         /* Sessões de Conteúdo */
@@ -77,12 +78,13 @@
         @media (max-width: 768px) {
             .hero { text-align: center; }
             h1 { font-size: 2.2em; }
+            .video-wrapper { max-width: 90%; } /* No celular ele ocupa quase a tela toda */
         }
     </style>
 </head>
 <body>
 
-    <section class="hero">
+    <header class="hero">
         <div class="hero-text">
             <h1>CONFERÊNCIA<br>DESPERTAR</h1>
             <p class="hero-subtitle">O seu ponto de virada entre a sobrecarga e o crescimento real.</p>
@@ -92,13 +94,13 @@
         <div class="hero-image">
             <img src="mentora.jpg" alt="Mentora Conferência Despertar">
         </div>
-    </section>
+    </header>
 
     <section class="sessao-video">
         <div class="container">
-            <h2 style="color: var(--verde-escuro); margin-bottom: 30px;">Assista ao Recado Especial</h2>
+            <h3 style="color: var(--verde-escuro); margin-bottom: 20px;">Assista ao vídeo abaixo:</h3>
             <div class="video-wrapper">
-                <video controls poster="thumb.jpg">
+                <video controls>
                     <source src="video.mp4" type="video/mp4">
                     Seu navegador não suporta a tag de vídeo.
                 </video>
@@ -109,8 +111,7 @@
     <section class="sessao-dor">
         <div class="container">
             <h2 style="color: var(--verde-escuro); font-size: 2em;">Você sente que está carregando o mundo nas costas?</h2>
-            <p>Muitas vezes, a rotina nos consome. Você olha ao redor e parece que, apesar de fazer tanto, você continua parada no mesmo lugar. A sensação é de cansaço extremo e estagnação.</p>
-            <p>Eu sei como é sentir que a pressão está vencendo. Mas e se eu te dissesse que uma mente treinada transforma pressão em potência?</p>
+            <p>Muitas vezes, a rotina nos consome. Você olha ao redor e parece que, apesar de fazer tanto, você continua parada no mesmo lugar.</p>
             <p><strong>Você não foi feita para viver sobrecarregada. Você foi feita para florescer.</strong></p>
         </div>
     </section>
@@ -133,7 +134,7 @@
             <div class="card-detalhes">
                 <p>📅 <strong>QUANDO:</strong> 24 de Janeiro de 2026</p>
                 <p>🕘 <strong>HORÁRIO:</strong> 09:00 às 19:00</p>
-                <p>📍 <strong>ONDE:</strong> Golden Tower Maracanaú by Fênix Hotéis</p>
+                <p>📍 <strong>ONDE:</strong> Golden Tower Maracanaú</p>
                 <p>☕ <strong>INCLUSO:</strong> Coffee-break completo.</p>
             </div>
             <div class="bonus-box">
@@ -148,13 +149,13 @@
     <footer>
         <div class="container">
             <h2 style="color: var(--dourado);">A pressão vai virar crescimento.</h2>
-            <p style="font-size: 1.2em; margin-bottom: 30px;">Viva o extraordinário de Deus para a sua vida.</p>
-            <p style="margin-top: 40px; font-size: 0.8em; opacity: 0.6;">© 2026 CONFERÊNCIA DESPERTAR.</p>
-            <p style="margin-top: 40px; font-size: 0.8em; opacity: 0.6;">INSTITUTO GÊNOVA CNPJ: 47.415.200/0001-79.</p>
+            <p>© 2026 CONFERÊNCIA DESPERTAR.</p>
+            <p style="font-size: 0.8em; opacity: 0.6;">INSTITUTO GÊNOVA CNPJ: 47.415.200/0001-79.</p>
         </div>
     </footer>
 
 </body>
 </html>
+
 
 
