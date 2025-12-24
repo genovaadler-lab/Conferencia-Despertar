@@ -17,7 +17,7 @@
         body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; padding: 0; color: var(--texto); background-color: #fcfdfc; scroll-behavior: smooth; }
         .container { width: 90%; max-width: 1100px; margin: auto; padding: 20px; }
         
-        /* SESSÃO 1: HERO COM A SUA FOTO */
+        /* SESSÃO 1: HERO */
         .hero { 
             background-color: var(--verde-escuro);
             color: var(--branco);
@@ -44,6 +44,20 @@
             margin-top: 10px;
         }
         .cta-button:hover { transform: scale(1.05); background: var(--dourado-hover); }
+
+        /* ESTILO DO VÍDEO LOCAL */
+        .sessao-video { padding: 60px 0; background-color: #f0f4f2; text-align: center; }
+        .video-wrapper {
+            max-width: 800px;
+            margin: 0 auto;
+            border-radius: 20px;
+            overflow: hidden;
+            border: 4px solid var(--dourado);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+            background: #000;
+            line-height: 0; /* Remove espaços extras */
+        }
+        video { width: 100%; height: auto; display: block; }
 
         /* Sessões de Conteúdo */
         .sessao-dor { background-color: var(--verde-claro); padding: 80px 0; text-align: center; }
@@ -77,6 +91,18 @@
         </div>
         <div class="hero-image">
             <img src="mentora.jpg" alt="Mentora Conferência Despertar">
+        </div>
+    </section>
+
+    <section class="sessao-video">
+        <div class="container">
+            <h2 style="color: var(--verde-escuro); margin-bottom: 30px;">Assista ao Recado Especial</h2>
+            <div class="video-wrapper">
+                <video controls poster="thumb.jpg">
+                    <source src="video.mp4" type="video/mp4">
+                    Seu navegador não suporta a tag de vídeo.
+                </video>
+            </div>
         </div>
     </section>
 
@@ -129,7 +155,6 @@
     </footer>
 
 </body>
-
 </html>
 
 
